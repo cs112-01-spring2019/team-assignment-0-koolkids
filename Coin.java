@@ -18,12 +18,13 @@ public class Coin{
 		//return FACE;
 	}
 
-	public String isHeads(){
+	public boolean isHeads(){
 		if (FACE == "Heads"){
 			return true;
 		} else {
 			return false;
 		}
+	}
 
 	public void setterCoin(int x){
 		if(x == 1){
