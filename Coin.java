@@ -23,7 +23,11 @@ public class Coin{
 	}
 
 	public void setterCoin(int x){
-		FACE = x;
+		if(x == 1){
+			FACE = "Heads";
+		}else if (x == 2){
+			FACE = "Tails";
+		}
 	}
 
 	public String toString(){
