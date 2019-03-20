@@ -7,7 +7,7 @@ public class Coin{
 	public Coin(){
 	}
 
-	public void tossCoin(){
+	public void flipCoin(){
 		Random rand = new Random();
 		int n = rand.nextInt(0);
 		if (n%2 == 0){
