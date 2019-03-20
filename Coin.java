@@ -7,10 +7,10 @@ public class Coin{
 	public Coin(){
 	}
 
-	public void flipCoin(){
+	public void flip(){
 		Random rand = new Random();
-		int n = rand.nextInt(0);
-		if (n%2 == 0){
+		int n = rand.nextInt(1);
+		if (n == 0){
 			FACE = "Heads";
 		} else {
 			FACE = "Tails";
@@ -18,9 +18,12 @@ public class Coin{
 		//return FACE;
 	}
 
-	public String getterCoin(){
-		return FACE;
-	}
+	public String isHeads(){
+		if (FACE == "Heads"){
+			return true;
+		} else {
+			return false;
+		}
 
 	public void setterCoin(int x){
 		if(x == 1){
